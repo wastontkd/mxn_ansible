@@ -1,0 +1,11 @@
+- name: Playbook - instalacao do docker e configuração do docker-swarm
+  hosts: all
+  roles: 
+    #- zabbix_agent
+    #- Update_zabbix_agent_conf
+    - mxn_docker-install
+
+- name: iniciando o node do docker-swarm
+  hosts: igarassu
+  roles: 
+    - mxn-swarm-init

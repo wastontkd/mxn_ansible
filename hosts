@@ -1,0 +1,4 @@
+[ubuntu_server]
+igarassu ansible_host=34.200.225.0 
+itamaraca ansible_host=3.238.34.55
+itapissuma ansible_host=3.238.186.184

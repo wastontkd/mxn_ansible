@@ -1,0 +1,12 @@
+comando do docker swarm para serem executados.
+
+
+1 - instalar o docker em todas as estações.
+Comando = curl fsSL https://get.docker.com | bash
+
+2 - docker swarm init no nó principal.
+
+3 - copiar o docker swarm join para ser aplicado nas demais estações que servirão de workes e manager passivo
+
+
+

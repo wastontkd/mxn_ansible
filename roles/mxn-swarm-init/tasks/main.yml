@@ -1,0 +1,12 @@
+- name: Iniciando o docker Swarm
+  become: yes
+  docker_swarm:
+    state: present
+
+- name: Adicionando os nodes
+  become: yes
+  docker_swarm:
+    state: join
+    advertise_addr: itamaraca, itapssuma
+    join_token:
+    remote_addrs: [ 'igarassu:2377' ]
